@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timber Kennel Co.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Import slim cursive font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Extend Tailwind with custom font -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cursive: ['"Dancing Script"', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="text-white font-cursive bg-cover bg-center min-h-screen" style="background-image: url('IMG_9283.jpeg');">
+  <div class="bg-black bg-opacity-10 min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-black bg-opacity-80 text-white p-6 shadow-md">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-3xl font-bold">Timber Kennel Co.</h1>
+        <nav>
+          <ul class="flex gap-6 text-lg">
+            <li><a href="#about" class="hover:underline">About</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+            <li><a href="parents.html" class="hover:underline">Meet the Parents</a></li>
+            <li><a href="puppies.html" class="hover:underline">Available Puppies</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 text-white text-center">
+      <div class="bg-black bg-opacity-0 p-8 rounded inline-block max-w-3xl mx-auto">
+        <!-- Logo -->
+        <img src="Timber Kennel Co (1).jpeg" alt="Timber Kennel Co Logo" class="mx-auto mb-6 max-w-xs md:max-w-sm rounded shadow-lg">
+
+        <!-- Slogan -->
+        <h2 class="text-4xl font-semibold leading-snug">
+          Rooted in Family, Raised with Love—<br class="hidden sm:inline">The Basset Hound Legacy of Timber Kennel Co.
+        </h2>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+      <div class="container mx-auto max-w-3xl text-center">
+        <h3 class="text-3xl font-bold mb-4">About Timber Kennel Co.</h3>
+        <p class="text-lg">
+          Welcome to Timber Kennel Co., a family-run basset hound breeding program nestled in the heart of Texas. Our kennel is home to Timber, our loyal and loving sire, and our two sweet girls, Lucy and Ellie. Together, they make up the heart of our operation—and our home.
+          <br><br>
+          As a big family with lots of little hands and big hearts, our puppies are raised in a warm, kid-friendly environment, making them incredibly well-socialized and ready to become part of your family. We’re passionate about breeding healthy, happy bassets with the long ears, soulful eyes, and easygoing charm the breed is known for.
+          <br><br>
+          Join the Timber Kennel Co. legacy—where quality meets compassion, and every basset hound is raised to thrive in your home and your heart. When you choose a Timber Kennel Co. pup, you’re not just getting a dog—you’re gaining a loyal companion, raised with intention, integrity, and the warmth of a true Texas family.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-black bg-opacity-80 text-white py-10">
+      <div class="container mx-auto text-center">
+        <h4 class="text-2xl font-semibold mb-2">Contact Us</h4>
+        <p>
+          Email: <a href="mailto:destrysills@gmail.com" class="text-blue-400 hover:underline">destrysills@gmail.com</a> |
+          Phone: <a href="tel:+12148423653" class="text-blue-400 hover:underline">(214) 842-3653</a>
+        </p>
+        <p class="mt-4">2361 VZ County Road 3513, Wills Point, TX</p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
