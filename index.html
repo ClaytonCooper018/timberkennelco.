@@ -26,10 +26,19 @@
   <div class="bg-black bg-opacity-10 min-h-screen">
 
     <!-- Header -->
-    <header class="bg-black bg-opacity-80 text-white p-6 shadow-md">
+    <header class="bg-black bg-opacity-80 text-white p-6 shadow-md relative">
       <div class="container mx-auto flex justify-between items-center">
         <h1 class="text-3xl font-bold">Timber Kennel Co.</h1>
-        <nav>
+
+        <!-- Hamburger Icon (mobile only) -->
+        <div class="md:hidden flex flex-col gap-1 cursor-pointer" onclick="toggleMenu()">
+          <span class="block w-6 h-0.5 bg-white"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex">
           <ul class="flex gap-6 text-lg">
             <li><a href="#about" class="hover:underline">About</a></li>
             <li><a href="#contact" class="hover:underline">Contact</a></li>
@@ -38,6 +47,16 @@
           </ul>
         </nav>
       </div>
+
+      <!-- Mobile Nav Menu -->
+      <nav id="mobileMenu" class="md:hidden hidden px-6 pt-4 pb-2 bg-black bg-opacity-90">
+        <ul class="flex flex-col gap-4 text-lg">
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+          <li><a href="parents.html" class="hover:underline">Meet the Parents</a></li>
+          <li><a href="puppies.html" class="hover:underline">Available Puppies</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Hero Section -->
@@ -79,5 +98,13 @@
     </footer>
 
   </div>
+
+  <!-- Toggle Script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
 </body>
 </html>
